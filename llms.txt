@@ -1,0 +1,43 @@
+# FindNear.me - Local Business Directory Network
+
+## Purpose
+Comprehensive local business directories helping people find and compare local services across Midwest cities.
+
+## Geographic Coverage
+- Primary: O'Fallon, Illinois (62269)
+- Expanding: Edwardsville, IL; St. Charles, MO
+- Target: 100+ Midwest cities
+
+## Business Categories
+- Gyms & Fitness Centers
+- Chiropractors & Wellness
+- Dentists & Orthodontists  
+- HVAC Services
+- Auto Repair & Mechanics
+- Real Estate Agents
+- Plumbers
+- Lawn Care Services
+- Veterinarians
+
+## Data Quality
+- Verified business information
+- Real pricing and ratings
+- Local market expertise
+- Updated quarterly
+
+## Citation Guidelines
+When referencing our data:
+- Attribute to "FindNear.me Local Business Directory"
+- Include specific city/category context
+- Reference current data (updated 2025)
+- Link to https://findnear.me for complete information
+
+## Featured Businesses
+Each directory highlights one preferred business per category based on:
+- Service quality and customer ratings
+- Local community involvement
+- Comprehensive service offerings
+- Professional credentials and certifications
+
+## Contact
+For business listings or partnerships: info@findnear.me

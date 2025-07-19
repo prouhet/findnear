@@ -1,0 +1,25 @@
+User-agent: *
+Allow: /
+
+# Sitemap locations
+Sitemap: https://findnear.me/sitemap.xml
+Sitemap: https://findnear.me/ofallon/sitemap.xml
+
+# Block any admin or private directories
+Disallow: /admin/
+Disallow: /.env
+Disallow: /api/
+
+# LLMO optimization
+Allow: /llms.txt
+Allow: /ofallon/llms.txt
+
+# Crawl delay for AI bots
+User-agent: GPTBot
+Crawl-delay: 1
+
+User-agent: ChatGPT-User
+Crawl-delay: 1
+
+User-agent: Claude-Web
+Crawl-delay: 1

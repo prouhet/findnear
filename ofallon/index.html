@@ -1,0 +1,1433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O'Fallon Business Directory - Find Local Services in O'Fallon, IL 62269</title>
+    <meta name="description" content="Complete O'Fallon, IL business directory. Find the best local gyms, dentists, HVAC, auto repair, real estate, plumbers, lawn care, and more in the 62269 area.">
+    
+    <!-- Local SEO -->
+    <meta name="geo.region" content="US-IL">
+    <meta name="geo.placename" content="O'Fallon">
+    <meta name="geo.position" content="38.5922;-89.9118">
+    <meta name="ICBM" content="38.5922, -89.9118">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Global Styles - O'Fallon Theme */
+        :root {
+            --primary-color: #2563eb;
+            --secondary-color: #1e40af;
+            --accent-color: #60a5fa;
+            --light-color: #f8fafc;
+            --dark-color: #1e293b;
+            --gray-color: #64748b;
+            --light-gray: #e2e8f0;
+            --premium-color: #f59e0b;
+            --success-color: #059669;
+            --border-radius: 8px;
+            --box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 80px;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.6;
+            color: var(--dark-color);
+            background-color: var(--light-color);
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+
+        a {
+            text-decoration: none;
+            color: var(--primary-color);
+            transition: var(--transition);
+        }
+
+        a:hover {
+            color: var(--secondary-color);
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        section {
+            padding: 80px 0;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            border-radius: var(--border-radius);
+            font-weight: 600;
+            text-align: center;
+            cursor: pointer;
+            transition: var(--transition);
+            border: none;
+            font-family: 'Montserrat', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            box-shadow: var(--box-shadow);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 25px rgba(37, 99, 235, 0.3);
+            color: white;
+        }
+
+        /* Header Styles */
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            box-shadow: var(--box-shadow);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: white;
+        }
+
+        .logo .highlight {
+            color: var(--premium-color);
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 25px;
+        }
+
+        nav ul li a {
+            color: white;
+            font-weight: 600;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            padding: 8px 0;
+            border-bottom: 2px solid transparent;
+            transition: var(--transition);
+        }
+
+        nav ul li a:hover {
+            color: var(--premium-color);
+            border-bottom-color: var(--premium-color);
+        }
+
+        .menu-toggle {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+
+        .menu-toggle span {
+            width: 25px;
+            height: 3px;
+            background-color: white;
+            margin: 3px 0;
+            transition: var(--transition);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 50%, var(--dark-color) 100%);
+            color: white;
+            text-align: center;
+            padding: 100px 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="20" cy="20" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="80" cy="40" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="40" cy="80" r="1" fill="rgba(255,255,255,0.1)"/></svg>');
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(135deg, white, var(--premium-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero .subtitle {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero-stats {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 3rem;
+        }
+
+        .hero-stat {
+            text-align: center;
+        }
+
+        .hero-stat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--premium-color);
+            display: block;
+        }
+
+        .hero-stat-label {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        /* Local Info Section */
+        .local-info {
+            background: white;
+            padding: 60px 0;
+        }
+
+        .local-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .local-text h2 {
+            color: var(--secondary-color);
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+        }
+
+        .local-highlights {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .highlight-item {
+            background: var(--light-color);
+            padding: 20px;
+            border-radius: var(--border-radius);
+            text-align: center;
+            border-left: 4px solid var(--primary-color);
+        }
+
+        .highlight-number {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            display: block;
+        }
+
+        /* Directory Grid Section */
+        .directories {
+            background: var(--light-color);
+        }
+
+        .directories-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 25px;
+            margin-top: 50px;
+        }
+
+        .directory-card {
+            background: white;
+            padding: 30px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+            border-left: 5px solid var(--primary-color);
+        }
+
+        .directory-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 35px rgba(37, 99, 235, 0.2);
+        }
+
+        .directory-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+        }
+
+        /* Individual Directory Card Colors - UPDATED TO MATCH CROSS-NAVIGATION */
+        .directory-card.gyms {
+            border-left-color: #e53e3e;
+        }
+
+        .directory-card.gyms::before {
+            background: linear-gradient(90deg, #e53e3e, #fc8181);
+        }
+
+        .directory-card.gyms .directory-icon {
+            color: #e53e3e !important;
+        }
+
+        .directory-card.gyms .directory-count {
+            background: #e53e3e !important;
+        }
+
+        .directory-card.chiropractors {
+            border-left-color: #2c5aa0;
+        }
+
+        .directory-card.chiropractors::before {
+            background: linear-gradient(90deg, #2c5aa0, #4299e1);
+        }
+
+        .directory-card.chiropractors .directory-icon {
+            color: #2c5aa0 !important;
+        }
+
+        .directory-card.chiropractors .directory-count {
+            background: #2c5aa0 !important;
+        }
+
+        .directory-card.dentists {
+            border-left-color: #38a169;
+        }
+
+        .directory-card.dentists::before {
+            background: linear-gradient(90deg, #38a169, #68d391);
+        }
+
+        .directory-card.dentists .directory-icon {
+            color: #38a169 !important;
+        }
+
+        .directory-card.dentists .directory-count {
+            background: #38a169 !important;
+        }
+
+        .directory-card.hvac {
+            border-left-color: #3182ce;
+        }
+
+        .directory-card.hvac::before {
+            background: linear-gradient(90deg, #3182ce, #63b3ed);
+        }
+
+        .directory-card.hvac .directory-icon {
+            color: #3182ce !important;
+        }
+
+        .directory-card.hvac .directory-count {
+            background: #3182ce !important;
+        }
+
+        .directory-card.auto-repair {
+            border-left-color: #d69e2e;
+        }
+
+        .directory-card.auto-repair::before {
+            background: linear-gradient(90deg, #d69e2e, #f6d55c);
+        }
+
+        .directory-card.auto-repair .directory-icon {
+            color: #d69e2e !important;
+        }
+
+        .directory-card.auto-repair .directory-count {
+            background: #d69e2e !important;
+        }
+
+        .directory-card.real-estate {
+            border-left-color: #805ad5;
+        }
+
+        .directory-card.real-estate::before {
+            background: linear-gradient(90deg, #805ad5, #b794f6);
+        }
+
+        .directory-card.real-estate .directory-icon {
+            color: #805ad5 !important;
+        }
+
+        .directory-card.real-estate .directory-count {
+            background: #805ad5 !important;
+        }
+
+        .directory-card.plumbers {
+            border-left-color: #2b6cb0;
+        }
+
+        .directory-card.plumbers::before {
+            background: linear-gradient(90deg, #2b6cb0, #4299e1);
+        }
+
+        .directory-card.plumbers .directory-icon {
+            color: #2b6cb0 !important;
+        }
+
+        .directory-card.plumbers .directory-count {
+            background: #2b6cb0 !important;
+        }
+
+        .directory-card.lawn-care {
+            border-left-color: #68d391;
+        }
+
+        .directory-card.lawn-care::before {
+            background: linear-gradient(90deg, #68d391, #9ae6b4);
+        }
+
+        .directory-card.lawn-care .directory-icon {
+            color: #68d391 !important;
+        }
+
+        .directory-card.lawn-care .directory-count {
+            background: #68d391 !important;
+        }
+
+        .directory-card.veterinarians {
+            border-left-color: #f56565;
+        }
+
+        .directory-card.veterinarians::before {
+            background: linear-gradient(90deg, #f56565, #feb2b2);
+        }
+
+        .directory-card.veterinarians .directory-icon {
+            color: #f56565 !important;
+        }
+
+        .directory-card.veterinarians .directory-count {
+            background: #f56565 !important;
+        }
+
+        .directory-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .directory-icon {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-right: 15px;
+        }
+
+        .directory-title h3 {
+            font-size: 1.4rem;
+            color: var(--secondary-color);
+            margin: 0;
+        }
+
+        .directory-count {
+            background: var(--primary-color);
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .directory-description {
+            color: var(--gray-color);
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .directory-features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 20px;
+        }
+
+        .feature-tag {
+            background: var(--light-color);
+            color: var(--dark-color);
+            padding: 4px 12px;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
+        /* Testimonials */
+        .testimonials {
+            background: white;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .testimonial-card {
+            background: var(--light-color);
+            padding: 30px;
+            border-radius: var(--border-radius);
+            position: relative;
+        }
+
+        .testimonial-card::before {
+            content: '"';
+            position: absolute;
+            top: -10px;
+            left: 20px;
+            font-size: 4rem;
+            color: var(--primary-color);
+            opacity: 0.3;
+        }
+
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 20px;
+            color: var(--dark-color);
+        }
+
+        .testimonial-author {
+            font-weight: 600;
+            color: var(--secondary-color);
+        }
+
+        .testimonial-location {
+            font-size: 0.9rem;
+            color: var(--gray-color);
+        }
+
+        /* Business Owner CTA */
+        .business-cta {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            text-align: center;
+        }
+
+        .cta-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .cta-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .btn-white {
+            background: white;
+            color: var(--primary-color);
+            border: 2px solid white;
+        }
+
+        .btn-white:hover {
+            background: transparent;
+            color: white;
+        }
+
+        /* Contact Section */
+        .contact {
+            background: var(--light-color);
+        }
+
+        .contact-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            margin-top: 40px;
+        }
+
+        .contact-form {
+            background: white;
+            padding: 40px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: var(--dark-color);
+        }
+
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid var(--light-gray);
+            border-radius: var(--border-radius);
+            font-size: 1rem;
+            transition: var(--transition);
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+        }
+
+        .form-group textarea {
+            height: 120px;
+            resize: vertical;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 15px;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            border: none;
+            border-radius: var(--border-radius);
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 25px rgba(37, 99, 235, 0.3);
+        }
+
+        .map-container {
+            background: white;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--box-shadow);
+            height: 400px;
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--dark-color);
+            color: white;
+            padding: 60px 0 20px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-section h4 {
+            color: var(--premium-color);
+            margin-bottom: 20px;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-section ul li a {
+            color: #94a3b8;
+            transition: var(--transition);
+        }
+
+        .footer-section ul li a:hover {
+            color: var(--premium-color);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid #374151;
+            color: #9ca3af;
+        }
+
+        /* Success Message */
+        .success-message {
+            background: var(--success-color);
+            color: white;
+            padding: 15px;
+            border-radius: var(--border-radius);
+            margin-bottom: 20px;
+            display: none;
+        }
+
+        .success-message.show {
+            display: block;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header .container {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            nav {
+                width: 100%;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                gap: 10px;
+                display: none;
+            }
+            
+            nav ul.active {
+                display: flex;
+            }
+            
+            .menu-toggle {
+                display: flex;
+                position: absolute;
+                top: 20px;
+                right: 20px;
+            }
+            
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+            
+            .hero-stats {
+                flex-direction: column;
+                gap: 20px;
+            }
+            
+            .local-content {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+            
+            .contact-content {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            section {
+                padding: 60px 0;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .directories-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .directory-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="/" style="color: white;">Find<span class="highlight">Near</span>.me</a> / O'Fallon
+            </div>
+            <nav>
+                <div class="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#directories">Directories</a></li>
+                    <li><a href="#testimonials">Reviews</a></li>
+                    <li><a href="#business">For Business</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>O'Fallon Business Directory</h1>
+                <p class="subtitle">Your complete guide to finding the best local businesses in O'Fallon, Illinois (62269) and surrounding areas. Compare ratings, services, and pricing across multiple categories to find exactly what you need.</p>
+                
+                <div class="hero-stats">
+                    <div class="hero-stat">
+                        <span class="hero-stat-number">9+</span>
+                        <span class="hero-stat-label">Business Categories</span>
+                    </div>
+                    <div class="hero-stat">
+                        <span class="hero-stat-number">200+</span>
+                        <span class="hero-stat-label">Local Businesses</span>
+                    </div>
+                    <div class="hero-stat">
+                        <span class="hero-stat-number">100%</span>
+                        <span class="hero-stat-label">Local Focus</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Local Info Section -->
+    <section class="local-info">
+        <div class="container">
+            <div class="local-content">
+                <div class="local-text">
+                    <h2>Serving O'Fallon & Metro East Illinois</h2>
+                    <p style="font-size: 1.1rem; color: var(--gray-color); margin-bottom: 20px;">
+                        Located in the heart of the Metro East, O'Fallon is home to over 30,000 residents and growing rapidly. Our comprehensive business directory helps both longtime residents and newcomers discover the best local services in the 62269 area and beyond.
+                    </p>
+                    <p style="font-size: 1.1rem; color: var(--gray-color); margin-bottom: 30px;">
+                        From Scott Air Force Base families to new subdivisions near Green Mount Crossing, O'Fallon residents deserve easy access to quality local businesses. That's exactly what our directory network provides.
+                    </p>
+                    
+                    <div class="local-highlights">
+                        <div class="highlight-item">
+                            <span class="highlight-number">60K+</span>
+                            <span>Residents Served</span>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-number">62269</span>
+                            <span>Primary Zip Code</span>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-number">24/7</span>
+                            <span>Always Available</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49933.364234057475!2d-89.93642272368582!3d38.59219199650342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8875348db3ba31db%3A0xfb58ece13940b246!2sO&#39;Fallon%2C%20IL%2062269!5e0!3m2!1sen!2sus!4v1653508272909!5m2!1sen!2sus" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Directories Section -->
+    <section id="directories" class="directories">
+        <div class="container">
+            <h2 style="text-align: center; color: var(--secondary-color); font-size: 2.5rem; margin-bottom: 20px;">
+                O'Fallon Business Directories
+            </h2>
+            <p style="text-align: center; font-size: 1.2rem; color: var(--gray-color); max-width: 700px; margin: 0 auto;">
+                Compare the best local businesses across all major service categories in O'Fallon, Illinois.
+            </p>
+            
+            <div class="directories-grid">
+                <!-- Gyms & Fitness -->
+                <a href="https://ofallongyms.com" class="directory-card gyms">
+                    <div class="directory-header">
+                        <div style="display: flex; align-items: center;">
+                            <i class="fas fa-dumbbell directory-icon"></i>
+                            <div class="directory-title">
+                                <h3>Gyms & Fitness</h3>
+                            </div>
+                        </div>
+                        <div class="directory-count">Compare 15+</div>
+                    </div>
+                    <div class="directory-description">
+                        Find the perfect gym in O'Fallon with our comprehensive comparison of fitness centers, personal training studios, CrossFit boxes, and specialty fitness programs.
+                    </div>
+                    <div class="directory-features">
+                        <span class="feature-tag">Personal Training</span>
+                        <span class="feature-tag">Group Classes</span>
+                        <span class="feature-tag">24/7 Access</span>
+                        <span class="feature-tag">Specialized Programs</span>
+                    </div>
+                </a>
+
+                <!-- Chiropractors -->
+                <a href="https://ofallonchiropractors.com" class="directory-card chiropractors">
+                    <div class="directory-header">
+                        <div style="display: flex; align-items: center;">
+                            <i class="fas fa-user-md directory-icon"></i>
+                            <div class="directory-title">
+                                <h3>Chiropractors</h3>
+                            </div>
+                        </div>
+                        <div class="directory-count">Compare 15+</div>
+                    </div>
+                    <div class="directory-description">
+                        Complete guide to chiropractic care in O'Fallon. Compare practices for back pain, neck pain, headaches, sports injuries, and wellness care.
+                    </div>
+                    <div class="directory-features">
+                        <span class="feature-tag">Sports Injuries</span>
+                        <span class="feature-tag">Auto Accidents</span>
+                        <span class="feature-tag">Wellness Care</span>
+                        <span class="feature-tag">All Insurance</span>
+                    </div>
+                </a>
+
+                <!-- Dentists -->
+                <a href="https://ofallondentists.com" class="directory-card dentists">
+                    <div class="directory-header">
+                        <div style="display: flex; align-items: center;">
+                            <i class="fas fa-tooth directory-icon"></i>
+                            <div class="directory-title">
+                                <h3>Dentists</h3>
+                            </div>
+                        </div>
+                        <div class="directory-count">Compare 22+</div>
+                    </div>
+                    <div class="directory-description">
+                        Find the right dentist for your family in O'Fallon. Compare general dentistry, orthodontics, oral surgery, and cosmetic dental practices.
+                    </div>
+                    <div class="directory-features">
+                        <span class="feature-tag">Family Dentistry</span>
+                        <span class="feature-tag">Orthodontics</span>
+                        <span class="feature-tag">Oral Surgery</span>
+                        <span class="feature-tag">Emergency Care</span>
+                    </div>
+                </a>
+
+                <!-- HVAC Services -->
+                <a href="https://ofallonhvac.com" class="directory-card hvac">
+                    <div class="directory-header">
+                        <div style="display: flex; align-items: center;">
+                            <i class="fas fa-wind directory-icon"></i>
+                            <div class="directory-title">
+                                <h3>HVAC Services</h3>
+                            </div>
+                        </div>
+                        <div class="directory-count">Compare 12+</div>
+                    </div>
+                    <div class="directory-description">
+                        Stay comfortable year-round with O'Fallon's best HVAC contractors. Compare heating, cooling, and air quality services for your home or business.
+                    </div>
+                    <div class="directory-features">
+                        <span class="feature-tag">24/7 Emergency</span>
+                        <span class="feature-tag">Installation</span>
+                        <span class="feature-tag">Maintenance</span>
+                        <span class="feature-tag">Air Quality</span>
+                    </div>
+                </a>
+
+                <!-- Auto Repair -->
+                <a href="https://ofalloncarrepair.com" class="directory-card auto-repair">
+                    <div class="directory-header">
+                        <div style="display: flex; align-items: center;">
+                            <i class="fas fa-car directory-icon"></i>
+                            <div class="directory-title">
+                                <h3>Auto Repair</h3>
+                            </div>
+                        </div>
+                        <div class="directory-count">Compare 18+</div>
+                    </div>
+                    <div class="directory-description">
+                        Keep your vehicle running smoothly with O'Fallon's trusted auto repair shops. Find mechanics, oil changes, brake service, and more.
+                    </div>
+                    <div class="directory-features">
+                        <span class="feature-tag">General Repair</span>
+                        <span class="feature-tag">Oil Changes</span>
+                        <span class="feature-tag">Brake Service</span>
+                        <span class="feature-tag">Diagnostics</span>
+                    </div>
+                </a>
+
+                <!-- Real Estate -->
+                <a href="https://ofallonrealtors.com" class="directory-card real-estate">
+                    <div class="directory-header">
+                        <div style="display: flex; align-items: center;">
+                            <i class="fas fa-home directory-icon"></i>
+                            <div class="directory-title">
+                                <h3>Real Estate</h3>
+                            </div>
+                        </div>
+                        <div class="directory-count">Compare 25+</div>
+                    </div>
+                    <div class="directory-description">
+                        Buy or sell your home in O'Fallon with confidence. Compare experienced realtors, market expertise, and local knowledge.
+                    </div>
+                    <div class="directory-features">
+                        <span class="feature-tag">Buying Agents</span>
+                        <span class="feature-tag">Selling Agents</span>
+                        <span class="feature-tag">Market Analysis</span>
+                        <span class="feature-tag">Local Expertise</span>
+                    </div>
+                </a>
+
+                <!-- Plumbers -->
+                <a href="https://plumberofallon.com" class="directory-card plumbers">
+                    <div class="directory-header">
+                        <div style="display: flex; align-items: center;">
+                            <i class="fas fa-wrench directory-icon"></i>
+                            <div class="directory-title">
+                                <h3>Plumbers</h3>
+                            </div>
+                        </div>
+                        <div class="directory-count">Compare 14+</div>
+                    </div>
+                    <div class="directory-description">
+                        Fast, reliable plumbing services in O'Fallon. Find emergency plumbers, water heater repair, drain cleaning, and installation services.
+                    </div>
+                    <div class="directory-features">
+                        <span class="feature-tag">Emergency Service</span>
+                        <span class="feature-tag">Water Heaters</span>
+                        <span class="feature-tag">Drain Cleaning</span>
+                        <span class="feature-tag">Installations</span>
+                    </div>
+                </a>
+
+                <!-- Lawn Care -->
+                <a href="https://ofallonlawnservices.com" class="directory-card lawn-care">
+                    <div class="directory-header">
+                        <div style="display: flex; align-items: center;">
+                            <i class="fas fa-leaf directory-icon"></i>
+                            <div class="directory-title">
+                                <h3>Lawn Care</h3>
+                            </div>
+                        </div>
+                        <div class="directory-count">Compare 16+</div>
+                    </div>
+                    <div class="directory-description">
+                        Keep your O'Fallon property looking its best. Compare lawn care services, landscaping, seasonal cleanup, and maintenance programs.
+                    </div>
+                    <div class="directory-features">
+                        <span class="feature-tag">Mowing</span>
+                        <span class="feature-tag">Landscaping</span>
+                        <span class="feature-tag">Seasonal Cleanup</span>
+                        <span class="feature-tag">Fertilization</span>
+                    </div>
+                </a>
+
+                <!-- Veterinarians -->
+                <a href="https://ofallonvets.com" class="directory-card veterinarians">
+                    <div class="directory-header">
+                        <div style="display: flex; align-items: center;">
+                            <i class="fas fa-paw directory-icon"></i>
+                            <div class="directory-title">
+                                <h3>Veterinarians</h3>
+                            </div>
+                        </div>
+                        <div class="directory-count">Compare 12+</div>
+                    </div>
+                    <div class="directory-description">
+                        Care for your pets with O'Fallon's trusted veterinary clinics. Find animal hospitals, emergency vets, and specialized pet care services.
+                    </div>
+                    <div class="directory-features">
+                        <span class="feature-tag">General Care</span>
+                        <span class="feature-tag">Emergency Vets</span>
+                        <span class="feature-tag">Surgery</span>
+                        <span class="feature-tag">Specialists</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2 style="text-align: center; color: var(--secondary-color); font-size: 2.5rem; margin-bottom: 20px;">
+                What O'Fallon Residents Say
+            </h2>
+            <p style="text-align: center; font-size: 1.2rem; color: var(--gray-color); max-width: 600px; margin: 0 auto;">
+                Real feedback from local residents who've used our directories to find great businesses.
+            </p>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        "Just moved to O'Fallon from out of state and this directory was a lifesaver! Found an amazing dentist, reliable HVAC company, and a great gym all in one place. Saved me so much time researching."
+                    </div>
+                    <div class="testimonial-author">Sarah M.</div>
+                    <div class="testimonial-location">New O'Fallon Resident</div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        "As a military family at Scott AFB, we move a lot. This directory made it so easy to find local services we could trust. The gym comparison especially helped us find the perfect fit for our family."
+                    </div>
+                    <div class="testimonial-author">Mike & Jennifer K.</div>
+                    <div class="testimonial-location">Scott Air Force Base</div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        "Been living in O'Fallon for 10 years and still discovered new businesses through this site. The side-by-side comparisons made it easy to switch to a better HVAC company."
+                    </div>
+                    <div class="testimonial-author">Robert D.</div>
+                    <div class="testimonial-location">O'Fallon Resident</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Business Owner CTA -->
+    <section id="business" class="business-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2 style="font-size: 2.5rem; margin-bottom: 20px;">O'Fallon Business Owners</h2>
+                <p style="font-size: 1.2rem; opacity: 0.9; margin-bottom: 20px;">
+                    Get your business discovered by local residents actively searching for your services.
+                </p>
+                <p style="font-size: 1.1rem; opacity: 0.8;">
+                    Join our network of featured businesses and reach customers in your neighborhood. Limited featured spots available in each category.
+                </p>
+                
+                <div class="cta-buttons">
+                    <a href="#contact" class="btn btn-white">Get Featured</a>
+                    <a href="#contact" class="btn btn-secondary" style="border-color: white; color: white;">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 style="text-align: center; color: var(--secondary-color); font-size: 2.5rem; margin-bottom: 20px;">
+                Contact Us
+            </h2>
+            <p style="text-align: center; font-size: 1.2rem; color: var(--gray-color); max-width: 600px; margin: 0 auto;">
+                Questions about our directories? Want to recommend a business? We'd love to hear from you.
+            </p>
+            
+            <div class="contact-content">
+                <div class="contact-form">
+                    <div id="success-message" class="success-message">
+                        <i class="fas fa-check-circle"></i> Thank you! Your message has been sent successfully.
+                    </div>
+                    
+                    <form id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                        <div class="form-group">
+                            <label for="name">Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="type">I am a... *</label>
+                            <select id="type" name="type" required>
+                                <option value="">Please select</option>
+                                <option value="resident">O'Fallon Resident</option>
+                                <option value="business-owner">Business Owner</option>
+                                <option value="newcomer">New to O'Fallon</option>
+                                <option value="visitor">Visitor</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <select id="subject" name="subject">
+                                <option value="general">General Question</option>
+                                <option value="business-recommendation">Recommend a Business</option>
+                                <option value="business-listing">List My Business</option>
+                                <option value="feedback">Feedback</option>
+                                <option value="partnership">Partnership Inquiry</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" placeholder="Tell us how we can help you find great local businesses..." required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+                
+                <div>
+                    <h3 style="color: var(--secondary-color); margin-bottom: 20px;">Get In Touch</h3>
+                    <p style="margin-bottom: 30px;">We're local to O'Fallon and committed to helping residents find the best businesses in our community.</p>
+                    
+                    <div style="margin-bottom: 25px;">
+                        <h4 style="color: var(--primary-color); margin-bottom: 10px;">
+                            <i class="fas fa-map-marker-alt"></i> Local Service Area
+                        </h4>
+                        <p>O'Fallon, IL 62269<br>
+                        Shiloh, Fairview Heights<br>
+                        Swansea, Lebanon<br>
+                        Scott Air Force Base<br>
+                        Surrounding Metro East</p>
+                    </div>
+                    
+                    <div style="margin-bottom: 25px;">
+                        <h4 style="color: var(--primary-color); margin-bottom: 10px;">
+                            <i class="fas fa-business-time"></i> Business Owners
+                        </h4>
+                        <p>Interested in being featured in our directories? We offer premium placement opportunities for qualified local businesses.</p>
+                    </div>
+                    
+                    <div style="margin-bottom: 25px;">
+                        <h4 style="color: var(--primary-color); margin-bottom: 10px;">
+                            <i class="fas fa-clock"></i> Response Time
+                        </h4>
+                        <p>We typically respond to all inquiries within 1-2 business days.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>O'Fallon Business Directory</h4>
+                    <p>Your local guide to finding the best businesses in O'Fallon, Illinois. Built by locals, for locals.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="/">FindNear.me Home</a></li>
+                        <li><a href="#directories">All Directories</a></li>
+                        <li><a href="#testimonials">Reviews</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Popular Categories</h4>
+                    <ul>
+                        <li><a href="https://ofallongyms.com">Gyms & Fitness</a></li>
+                        <li><a href="https://ofallondentists.com">Dentists</a></li>
+                        <li><a href="https://ofallonhvac.com">HVAC Services</a></li>
+                        <li><a href="https://ofalloncarrepair.com">Auto Repair</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Local Area</h4>
+                    <ul>
+                        <li><a href="#directories">O'Fallon 62269</a></li>
+                        <li><a href="#directories">Shiloh</a></li>
+                        <li><a href="#directories">Scott Air Force Base</a></li>
+                        <li><a href="#directories">Metro East Illinois</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 FindNear.me - O'Fallon Business Directory. Serving O'Fallon, IL and surrounding communities.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile navigation toggle
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navMenu = document.querySelector('nav ul');
+            
+            if (menuToggle) {
+                menuToggle.addEventListener('click', function() {
+                    navMenu.classList.toggle('active');
+                    
+                    // Animate hamburger menu
+                    const spans = menuToggle.querySelectorAll('span');
+                    spans.forEach((span, index) => {
+                        if (navMenu.classList.contains('active')) {
+                            if (index === 0) span.style.transform = 'rotate(45deg) translate(5px, 5px)';
+                            if (index === 1) span.style.opacity = '0';
+                            if (index === 2) span.style.transform = 'rotate(-45deg) translate(7px, -6px)';
+                        } else {
+                            span.style.transform = 'none';
+                            span.style.opacity = '1';
+                        }
+                    });
+                });
+            }
+            
+            // Smooth scrolling for internal links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href');
+                    if (targetId === '#') return;
+                    
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        // Close mobile menu if open
+                        if (navMenu.classList.contains('active')) {
+                            navMenu.classList.remove('active');
+                            const spans = menuToggle.querySelectorAll('span');
+                            spans.forEach(span => {
+                                span.style.transform = 'none';
+                                span.style.opacity = '1';
+                            });
+                        }
+                        
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+        });
+
+        // Contact form handling
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(this);
+            const successMessage = document.getElementById('success-message');
+            const submitBtn = document.querySelector('.submit-btn');
+            
+            // Show loading state
+            const originalText = submitBtn.innerHTML;
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+            submitBtn.disabled = true;
+            
+            // For demo purposes - replace with actual Formspree endpoint
+            // Simulate form submission
+            setTimeout(() => {
+                successMessage.classList.add('show');
+                this.reset();
+                
+                setTimeout(() => {
+                    successMessage.classList.remove('show');
+                }, 5000);
+                
+                // Restore button state
+                submitBtn.innerHTML = originalText;
+                submitBtn.disabled = false;
+            }, 1000);
+            
+            // Uncomment for actual Formspree integration:
+            /*
+            fetch(this.action, {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            }).then(response => {
+                if (response.ok) {
+                    successMessage.classList.add('show');
+                    this.reset();
+                    setTimeout(() => {
+                        successMessage.classList.remove('show');
+                    }, 5000);
+                } else {
+                    throw new Error('Network response was not ok');
+                }
+            }).catch(error => {
+                alert('Sorry, there was an error sending your message. Please try again.');
+                console.error('Error:', error);
+            }).finally(() => {
+                submitBtn.innerHTML = originalText;
+                submitBtn.disabled = false;
+            });
+            */
+        });
+
+        // Add intersection observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe elements for animation
+        document.querySelectorAll('.directory-card, .testimonial-card, .highlight-item').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
